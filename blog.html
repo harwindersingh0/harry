@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawesome - Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pawesome</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-posts">
+            <article>
+                <h2>Do Dogs Know Their Name?</h2>
+                <p>Yes, she knows that her name is Jimmy...</p>
+            </article>
+
+            <article>
+                <h2>Essential Tips to Raise Healthy Pets</h2>
+                <ul>
+                    <li>Give them attention</li>
+                    <li>Give them toys</li>
+                    
+                </ul>
+            </article>
+
+            <article>
+                <h2>Why Does My Dog Attack Me?</h2>
+                <ul>
+                    <li>Dominance or assertiveness over other dogs or humans</li>
+                    <li>Frustration or stress due to lack of exercise, stimulation, or attention</li>
+                    
+                </ul>
+            </article>
+
+            <article>
+                <h2>How to Throw a Birthday Party for Your Dog</h2>
+                <ul>
+                    <li>Send out dog-friendly invitations</li>
+                    <li>Make tasty pupcakes or a dog birthday cake</li>
+                    
+                </ul>
+            </article>
+        </section>
+        <div class="buttons">
+            <button id="backButton">Back to Home</button>
+            <button onclick="window.location.href='contact.html'">Go to Contact</button>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#backButton').click(function(){
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+</html>
